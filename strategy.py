@@ -92,9 +92,6 @@ def generate_signals(anchor_data: pd.DataFrame, target_data: pd.DataFrame) -> pd
     return signals
 
 
-    except Exception as e:
-        raise RuntimeError(f"Error in generate_signals: {e}")
-
 def get_coin_metadata() -> dict:
     """
     Specifies the target and anchor coins used in this strategy.
